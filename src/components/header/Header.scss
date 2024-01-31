@@ -1,0 +1,86 @@
+.header {
+  position: sticky;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  width: 100%;
+  z-index: 10000;
+  color: #fff;
+  font-family: "Noto Sans Armenian";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &__inner {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 120px 102px 211px 1fr 120px;
+    grid-template-rows: calc((140px - 54px) / 2) 54px calc((140px - 54px) / 2);
+  }
+
+  &__logo {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .hamburger {
+    &__menu {
+      width: 24px;
+      background-color: red;
+      height: 3px;
+      margin-top: 5px;
+      border-radius: 10px;
+      position: relative;
+      top: 100%;
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
+
+  &__menu-close {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__menu-item {
+    list-style-type: none;
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Noto Sans Armenian";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 32px 0 5px;
+
+    &:hover {
+      color: red;
+    }
+
+    &:active {
+      text-decoration: underline;
+    }
+
+  }
+  .active{
+    color: orange;
+  }
+}
