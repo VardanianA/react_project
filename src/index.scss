@@ -18,6 +18,8 @@
 //   src: url('../public/fonts/basic_sans_serif/Basic\ Sans\ Serif\ 7.ttf')
 // }
 
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100;200;300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +27,7 @@
   border: none;
   box-sizing: border-box;
   transition: all 0.3s linear;
+  font-family: 'Noto Sans Armenian', sans-serif;
   // max-width: 1920px;
   // max-height: 3894px;
 }

@@ -40,13 +40,18 @@
   }
   
   &__about-info{
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // align-items: flex-start;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-left: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 81px 0 37px;
+  }
+
+  &__about-heading{
+    color: #151515;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 
 
