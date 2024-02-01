@@ -1,18 +1,15 @@
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
 import Routers from "./Routers";
+import Context from "./Context";
 
 import "./index.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <section className="sections">
+    <Context>
+      <div className="App">
         <Routers />
-      </section>
-      <Footer />
-    </div>
+      </div>
+    </Context>
   );
 }
 

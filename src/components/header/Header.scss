@@ -13,13 +13,19 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__inner {
+    width: 100%;
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 120px 102px 211px 1fr 120px;
-    grid-template-rows: calc((140px - 54px) / 2) 54px calc((140px - 54px) / 2);
+    grid-template-columns: calc((100vw - 211px - 120px - 913px) / 4) 102px 211px 1fr 60px 218px calc(
+        (100vw - 211px - 120px - 913px) / 4
+      );
+    // grid-template-rows: calc((140px - 54px) / 2) 54px calc((140px - 54px) / 2);
   }
 
   &__logo {
@@ -41,8 +47,12 @@
   }
 
   &__menu {
-    display: grid;
-    grid-template-rows: 1fr;
+    width: 100%;
+    // display: grid;
+    // grid-template-rows: 1fr;
+    // justify-content: center;
+    // align-items: center;
+    display: flex;
     justify-content: center;
     align-items: center;
     grid-column: 4 / 5;
@@ -50,11 +60,15 @@
   }
 
   &__menu-close {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
   }
 
   &__menu-item {
@@ -69,18 +83,37 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 0 32px 0 5px;
+    padding: 53px 16px 54px 16px;
 
-    &:hover {
-      color: red;
+    &:hover{
+      background-color: #333333;
     }
 
-    &:active {
-      text-decoration: underline;
-    }
+    &--active {
+      color: #fb7327;
+      text-decoration: none;
+      font-family: "Noto Sans Armenian";
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 53px 16px 54px 16px;
 
+      &:hover{
+        background-color: #333333;
+      }
+    }
   }
-  .active{
-    color: orange;
+
+  &__btn {
+    grid-row: 2 / 3;
+    grid-column: 6 / 7;
+    background-color: white;
+    padding: 16px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    color: #303039;
   }
 }
