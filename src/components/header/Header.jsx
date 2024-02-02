@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import classNames from "classnames";
+import React, { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../../assets/icons/logo.svg";
 import "./Header.scss";
 
@@ -14,6 +14,7 @@ const MENU_ITEMS = [
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,7 +25,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__inner">
-        <img className="header__logo" src={logo} alt="logo" />
+        <img className="header__logo" src={logo} alt="logo" onClick={() => navigate('/')}/>
         <nav className="header__menu">
           <div className="header__menu-toggle">
             <div className="hamburger" onClick={handleClick}>

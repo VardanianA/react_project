@@ -1,10 +1,10 @@
 import React from 'react';
 import './Contact.scss';
 
-const Contact = () => {
+const ContactSection = () => {
   return (
     <div>Contact</div>
   )
 }
 
-export default Contact;
+export default ContactSection;
