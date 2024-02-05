@@ -1,0 +1,136 @@
+.contact {
+  width: 100%;
+  height: 100%;
+
+  &__inner {
+    margin: 376px 262px 160px 262px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 915px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 24px -2px #00060a;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 546px);
+    height: 100%;
+    padding: 55px 85px 0 85px;
+  }
+
+  &__form-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2e2e2e;
+    text-transform: uppercase;
+  }
+
+  &__form-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__form-msg {
+    width: 100%;
+    border-radius: 40px;
+    padding: 18px 0 152px 36px;
+    background-color: #e7e7e7;
+    color: #909090;
+    font-size: 24px;
+    font-weight: 500;
+    resize: none;
+  }
+
+  &__form-btn {
+    background-color: #df7736;
+    padding: 20px 91px;
+    border-radius: 51px;
+    color: white;
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__right {
+    width: 546px;
+    height: 100%;
+    background-color: black;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 48px;
+    padding: 55px 86px 229px 66px;
+  }
+
+  &__right-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 2rem;
+  }
+
+  &__right-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 7rem;
+  }
+
+  &__right-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  &__right-text {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__right-icon-img {
+    background-color: #383838;
+    border-radius: 50%;
+    padding: 0.6rem;
+  }
+
+  &__right-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    cursor: pointer;
+  }
+}
+
+.contact .input {
+  width: 100%;
+  border-radius: 43px;
+  background-color: #e7e7e7;
+  padding: 18px 0 18px 36px;
+  color: #909090;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact .input::placeholder {
+  color: #909090;
+  font-size: 24px;
+  font-weight: 500;
+}

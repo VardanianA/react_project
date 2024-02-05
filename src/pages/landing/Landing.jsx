@@ -5,6 +5,7 @@ import Services from "../../sections/services/Services";
 import Cooperate from "../../sections/cooperate/Cooperate";
 import CooperateCompany from "../../sections/cooperate_company/CooperateCompany";
 import Thinks from "../../sections/thinks/Thinks";
+import ContactSection from "../../sections/contact/Contact";
 
 const Landing = () => {
   return (
@@ -14,7 +15,8 @@ const Landing = () => {
       <Services />
       <Cooperate />
       <CooperateCompany />
-      <Thinks />
+      {/* <Thinks /> */}
+      <ContactSection />
     </div>
   );
 };
