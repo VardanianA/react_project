@@ -1,15 +1,14 @@
 import classNames from "classnames";
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../../assets/icons/logo.svg";
+import logo from "../../assets/icons/website-1_logo.svg";
 import "./Header.scss";
 
 const MENU_ITEMS = [
-  { id: "1", url: "", menuName: "Գլխավոր" },
-  { id: "2", url: "about", menuName: "Իմ մասին" },
-  { id: "3", url: "questions", menuName: "Հաճախ տրվող հարցեր" },
-  { id: "4", url: "services", menuName: "Ծառայություններ" },
-  { id: "5", url: "contact", menuName: "Կապ Ինձ Հետ" },
+  { id: "1", url: "", menuName: "Home" },
+  { id: "2", url: "about", menuName: "About Us" },
+  { id: "3", url: "services", menuName: "Services" },
+  { id: "4", url: "contact", menuName: "Contacts" },
 ];
 
 const Header = () => {
@@ -25,7 +24,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__inner">
-        <img className="header__logo" src={logo} alt="logo" onClick={() => navigate('/')}/>
+        <img className="header__logo" src={logo} alt="logo" onClick={() => navigate('/')} />
         <nav className="header__menu">
           <div className="header__menu-toggle">
             <div className="hamburger" onClick={handleClick}>
@@ -73,7 +72,6 @@ const Header = () => {
             })}
           </ul>
         </nav>
-        <button className="header__btn">ՈւՂԱՐԿԵԼ ՀԱՅՏ</button>
       </div>
     </header>
   );
